@@ -38,6 +38,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+// get flowers data
 
 -(void)getFlowersData
 {
@@ -84,6 +85,8 @@
     NSDictionary *dict = @{@"parameter1" : @"NO",@"parameter2" : @"Backend",@"parameter3" : @"flower.php"};
     [httpManager getRequestWithCallBack:dict withCallback:callback];
 }
+
+// tableview delegate function
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
      FlowersCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
